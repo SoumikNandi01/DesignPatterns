@@ -1,6 +1,9 @@
 How to implement Observer Pattern
 
 
+<i> <b> Observer is a behavioral design pattern that lets you define a subscription mechanism to notify multiple objects about any events that happen to the object they’re observing.</i> </b>
+
+
 1. Look over your business logic and try to break it down into two parts: the core functionality, independent from other code, will act as the publisher; the rest will turn into a set of subscriber classes. 
    
 2. Declare the subscriber interface. At a bare minimum, it should declare a single update method.

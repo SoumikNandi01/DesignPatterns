@@ -1,7 +1,7 @@
 This pattern states that we must always rely on abstractions rather than 
 concrete implementation
 
-
+<b> <i> Strategy is a behavioral design pattern that lets you define a family of algorithms, put each of them into a separate class, and make their objects interchangeable. </i> </b>
 
 1. In the context class, identify an algorithm that’s prone to frequent changes. It may also be a massive conditional that selects and executes a variant of the same algorithm at runtime. 
 In this example, it's the eat(), fly() and quack() methods that change frequently.
