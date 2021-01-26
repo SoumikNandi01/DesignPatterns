@@ -11,3 +11,9 @@ In this example, it's the eat(), fly() and quack() methods that change frequentl
 3. One by one, extract all algorithms into their own classes. They should all implement the strategy interface. Here, EatingSlowStrategy is an implementation of the EatingStrategy.
 
 4. In the context class, add a field for storing a reference to a strategy object. Provide a setter for replacing values of that field. The context should work with the strategy object only via the strategy interface. The context may define an interface which lets the strategy access its data. This also allows dependency injection (Look inside StrategyPatternDriver.java)
+
+This pattern is most applicable when you need to have multiple instances of a particular type of Class 
+with variations. This works as an alternative to hierarchical inheritence.  
+
+
+reference: https://refactoring.guru/design-patterns/strategy
