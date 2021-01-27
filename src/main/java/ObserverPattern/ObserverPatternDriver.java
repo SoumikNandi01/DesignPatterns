@@ -23,7 +23,17 @@ public class ObserverPatternDriver {
 
         ally.getUpdatedPlaylist();
         ally.displayPlaylist();
+        ally.displayNotificationList();
 
+        youtube.addVideo("Video2");
+        ally.displayNotificationList();
+        ally.getUpdatedPlaylist();
+        ally.displayPlaylist();
+
+        youtube.removeVideo("Video1");
+        ally.getUpdatedPlaylist();
+        ally.displayPlaylist();
+        ally.displayNotificationList();
 
     }
 

@@ -37,10 +37,10 @@ public class Youtube implements VideoPlatform{
     }
 
     @Override
-    public void notifyUsers() {
+    public void notifyUsers(String name) {
         for (Object ob : subscriberList){
             User subscriber = (User)ob;
-            subscriber.popUp("New Videos Uploaded");
+            subscriber.popUp(name + " Uploaded");
         }
     }
 
@@ -52,11 +52,11 @@ public class Youtube implements VideoPlatform{
     @Override
     public void addVideo(String name) {
         videoList.add(name);
-        notifyUsers();
+        notifyUsers(name);
     }
     @Override
     public void removeVideo(String name) {
-        videoList.add(name);
+        videoList.remove(name);
     }
 
     @Override
