@@ -1,31 +1,28 @@
 package ObserverPattern;
 
+import com.google.inject.Guice;
+import com.google.inject.Injector;
+
 public class ObserverPatternDriver {
     public static void main(String[] args) {
-        VideoPlatform youtube = new Youtube();
 
-        User soumik = new Subscriber("Soumik", youtube);
-        User ally = new Subscriber("Ally", youtube);
+        Injector injector = Guice.createInjector(new MyModule());
 
-
-        soumik.displayNotificationList();
-        soumik.displayPlaylist();
+        VideoPlatform youtube = injector.getInstance(VideoPlatform.class);
+        User ally = injector.getInstance(User.class);
 
 
+        ally.displayPlaylist();
+
+        youtube.subscribe(ally);
         youtube.addVideo("Video1");
-        youtube.addVideo("Video2");
-        youtube.displaySubscriberList();
+
+        ally.displayNotificationList();
+
         youtube.displayVideoList();
 
-
-        youtube.subscribe(soumik);
-        youtube.displaySubscriberList();
-
-        soumik.displayNotificationList();
-        soumik.displayPlaylist();
-
-        soumik.getUpdatedPlaylist();
-
+        ally.getUpdatedPlaylist();
+        ally.displayPlaylist();
 
 
     }

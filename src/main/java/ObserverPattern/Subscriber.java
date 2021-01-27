@@ -1,5 +1,7 @@
 package ObserverPattern;
 
+import javax.inject.Inject;
+import javax.inject.Named;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -13,7 +15,8 @@ public class Subscriber implements User{
     private VideoPlatform videoPlatform;
 
 
-    public Subscriber(String userName, VideoPlatform videoPlatform) {
+    @Inject
+    public Subscriber(@Named("userName") String userName, VideoPlatform videoPlatform) {
         this.subscribedList = new LinkedList();
         this.userName = userName;
         this.videoPlatform = videoPlatform;

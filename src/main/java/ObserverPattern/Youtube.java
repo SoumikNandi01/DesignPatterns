@@ -1,5 +1,6 @@
 package ObserverPattern;
 
+import javax.inject.Inject;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -42,6 +43,7 @@ public class Youtube implements VideoPlatform{
             subscriber.popUp("New Videos Uploaded");
         }
     }
+
     @Override
     public List getVideos(){
         return videoList;
