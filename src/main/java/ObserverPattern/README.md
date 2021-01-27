@@ -26,3 +26,7 @@ How to implement Observer Pattern
 This pattern is actually implemented heavily in chat messaging applications. 
 
 reference : https://refactoring.guru/design-patterns/observer
+
+The example shows a Youtube Subscription System where the users get notified whenever a new video is being added
+This is called the push notification. The user then can pull the changes from the Youtube platform which pulls the 
+updated status of the playlist that the user is subscribed to. The notifications is only sent to those who are subscribed to the platform. 
