@@ -3,6 +3,7 @@ package DecoratorPattern;
 public class WhippedCream extends LiquidDecorator {
 
     private final Beverage beverage;
+    private final int cost = 5;
 
     public WhippedCream(Beverage beverage) {
         this.beverage = beverage;
@@ -10,7 +11,7 @@ public class WhippedCream extends LiquidDecorator {
 
     @Override
     public int getCost() {
-        return beverage.getCost() + 5;
+        return beverage.getCost() + cost;
     }
 
     @Override

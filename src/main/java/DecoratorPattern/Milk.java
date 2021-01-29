@@ -1,9 +1,11 @@
 package DecoratorPattern;
 
 public class Milk implements Beverage{
+    private final int cost = 50;
+
     @Override
     public int getCost() {
-        return 50;
+        return cost;
     }
 
     @Override

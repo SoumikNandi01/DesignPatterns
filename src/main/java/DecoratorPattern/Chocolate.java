@@ -15,6 +15,6 @@ public class Chocolate extends LiquidDecorator {
 
     @Override
     public String getIngredients() {
-        return beverage.getIngredients() + "Chocolate : " + cost + "\n";
+        return "Chocolate " + beverage.getIngredients();
     }
 }

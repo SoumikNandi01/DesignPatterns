@@ -16,6 +16,6 @@ public class Caramel extends LiquidDecorator {
 
     @Override
     public String getIngredients() {
-        return null;
+        return "Caramel " + beverage.getIngredients();
     }
 }
