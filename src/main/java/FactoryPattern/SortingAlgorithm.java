@@ -4,7 +4,7 @@ import java.util.List;
 
 public interface SortingAlgorithm {
     void describe();
-    List sort(List lst);
+    <T> List sort(List<T> lst) throws Exception;
 
 
 }
