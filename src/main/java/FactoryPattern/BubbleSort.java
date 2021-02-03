@@ -9,7 +9,6 @@ public class BubbleSort implements SortingAlgorithm {
 
     @Override
     public <T> List sort(List<T> last) throws Exception{
-        //TODO : Write BubbleSort Algorithm
         int n = last.size();
         if(n == 0)
             return last;
