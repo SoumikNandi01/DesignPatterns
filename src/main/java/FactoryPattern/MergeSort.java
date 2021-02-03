@@ -9,7 +9,7 @@ public class MergeSort implements SortingAlgorithm {
     }
 
     @Override
-    public List sort(List lst) {
+    public <T> List sort(List<T> lst) {
         //TODO : Write MergeSort Algorithm
         return lst;
     }
