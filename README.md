@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # DesignPatterns
 This Repository outlines the Basic OOP Design Patterns Example coded in Java
 The repository is referenced from the Design Pattern Playlist from Christopher Okhravi
@@ -11,5 +10,3 @@ Design Patterns Playlist.
 
 <b> You can find all source code inside </b> <i> src/main/java </i>
 
-Link: 
->>>>>>> 3b6e504f259da7d98fac44d35abfe390276162bf
